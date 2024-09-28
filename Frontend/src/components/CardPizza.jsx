@@ -1,5 +1,3 @@
-// src/components/CardPizza.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +8,7 @@ const CardPizza = ({ pizza }) => {
       <h2>{pizza.name}</h2>
       <p>{pizza.desc}</p>
       <p>Precio: ${pizza.price.toFixed(2)}</p>
-      {/* Enlace a PizzaPage con el ID de la pizza */}
+    
       <Link to={`/pizza/${pizza.id}`} className="btn btn-primary">Ver más</Link>
     </div>
   );

@@ -1,8 +1,7 @@
-// src/components/Navbar.jsx
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'; 
 import { useCart } from '../context/CartContext';
-import { GlobalContext } from '../context/UserContext'; // Importar el contexto global
+import { GlobalContext } from '../context/UserContext'; 
 
 const Navbar = () => {
     const { getTotalPrice } = useCart();
@@ -44,7 +43,7 @@ const Navbar = () => {
                     <ul className="nav box">
                         <li className="nav-item">
                             <Link className="nav-link border border-white rounded px-2 py-1 active" to="/cart">
-                                🛒Total: ${total.toFixed(0)} {/* Mostrar el total del carrito */}
+                                🛒Total: ${total.toFixed(0)}
                             </Link>
                         </li>
                     </ul>
